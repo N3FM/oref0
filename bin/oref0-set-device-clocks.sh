@@ -51,6 +51,6 @@ if checkNTP; then
     if [ ! -f xdrip.ini ] 
     then
       echo Setting CGM time to $(date)
-      openaps use $CGM UpdateTime --to now 2>&1 >/dev/null | tail -1
+ #     openaps use $CGM UpdateTime --to now 2>&1 >/dev/null | tail -1
     fi
 fi
